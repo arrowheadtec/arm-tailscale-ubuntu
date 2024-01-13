@@ -34,4 +34,4 @@ runcmd:
   - echo 'net.ipv4.ip_forward = 1' | tee -a /etc/sysctl.conf
   - echo 'net.ipv6.conf.all.forwarding = 1' | tee -a /etc/sysctl.conf
   - sysctl -p /etc/sysctl.conf
-  - tailscale up --authkey __REPLACEKEY__  --advertise-routes=__REPLACEROUTES__
+  - tailscale up --authkey tskey-auth-kzBdA85CNTRL-oNUG9wNXV18zNh7n7nUa18FKpbbhUoGa  --advertise-routes=10.0.0.0/16
